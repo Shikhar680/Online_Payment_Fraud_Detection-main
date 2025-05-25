@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FraudShield | AI-Powered Payment Fraud Detection</title>
+    <meta name="description" content="Secure your online payments with AI-powered fraud detection. FraudShield offers real-time transaction analysis to protect you from fraud." />
+    <meta name="author" content="FraudShield" />
+    
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <a href="{{url_for('home')}}" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <span class="logo-text">FraudShield</span>
+          </a>
+          
+          <div class="nav-links desktop-nav">
+            <a href="{{url_for('home')}}" class="nav-item active">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+            <a href="{{url_for('predict')}}" class="nav-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Predict</span>
+            </a>
+            <a href="{{url_for('feedback')}}" class="nav-item">
+              <i class="fas fa-comment"></i>
+              <span>Feedback</span>
+            </a>
+          </div>
+          
+          <div class="mobile-nav">
+            <a href="{{url_for('home')}}" class="nav-item active">
+              <i class="fas fa-home"></i>
+            </a>
+            <a href="{{url_for('predict')}}" class="nav-item">
+              <i class="fas fa-shield-alt"></i>
+            </a>
+            <a href="{{url_for('feedback')}}" class="nav-item">
+              <i class="fas fa-comment"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">Secure Your Transactions with AI</h1>
+              <p class="hero-subtitle">Real-time fraud detection powered by Machine Learning & Neural Networks</p>
+              <a href="{{url_for('predict')}}" class="btn btn-primary hero-cta">
+                <span>Check Transaction Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="hero-image">
+              <img src="../static/images/fraud_hero.png" alt="AI Fraud Detection Illustration">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title">How It Works</h2>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="feature-title">Neural Network</h3>
+              <p class="feature-description">Our AI models analyze transactions using neural network for in-depth patterns.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="feature-title">Machine Learning</h3>
+              <p class="feature-description">Advanced algorithms learn from millions of transactions to improve accuracy.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="feature-title">Data Analytics</h3>
+              <p class="feature-description">Comprehensive analytics to understand transaction patterns and trends.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <span class="logo-text">FraudShield</span>
+          </div>
+          
+          <div class="footer-copyright">
+            © 2025 FraudShield. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
